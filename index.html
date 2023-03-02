@@ -1,21 +1,69 @@
-<frameset rows="18%,80%,10%" cols="*">
-  <!-- navbar -->
-  <frameset cols="10%,*" noresize="no">
-    <frame src="partials/logo.html"></frame>
-    <frame src="partials/navbar.html"></frame>
-  </frameset>
-  <frameset rows="70%,30%">
-    <frameset cols="10%,90%">
-      <frame src="partials/sidebar.html" noresize="no"></frame>
-      <frame src="home.html" name="page"></frame>
-    </frameset>
-    <frameset cols="*,*,*">
-      <frame src="second_content/varian1.html"></frame>
-      <frame src="second_content/varian2.html"></frame>
-      <frame src="second_content/varian3.html"></frame>
-    </frameset>
-  </frameset>
-  <frameset noresize="no">
-    <frame src="partials/footer.html"></frame>
-  </frameset>
-</frameset>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Management Product</title>
+  </head>
+  <body>
+    <br /><br />
+    <form action="" method="post">
+      <table align="center" width="30%" cellpadding="10">
+        <!-- bagia title form -->
+        <thead>
+          <tr>
+            <td colspan="2" bgcolor="#ADFF2F">
+              <center><h3>Form Register Produk</h3></center>
+            </td>
+          </tr>
+        </thead>
+        <!-- bagian content form -->
+        <tbody>
+          <tr>
+            <td><label for="nama_produk">Nama Produk</label></td>
+            <td><input type="text" autofocus id="nama_produk" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="jenis_produk">Jenis Produk</label>
+            </td>
+            <td>
+              <select name="jns_produk" id="jenis_produk">
+                <option value="">-Kategori Produk-</option>
+                <option value="Makanan">Makanan</option>
+                <option value="Alat">Alat</option>
+                <option value="Minuman">Minuman</option>
+                <option value="Sayuran">Sayuran</option>
+                <option value="Elektronik">Elektronik</option>
+                <option value="Mainan">Mainan</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="harga">Harga</label></td>
+            <td><input type="number" name="harga" id="harga" /></td>
+          </tr>
+          <tr>
+            <td><label for="stok">Stok</label></td>
+            <td><input type="number" name="stok" id="stok" /></td>
+          </tr>
+          <tr>
+            <td><label for="photo">Photo</label></td>
+            <td><input type="text" name="photo" id="photo" /></td>
+          </tr>
+        </tbody>
+        <!-- bagian footer form -->
+        <tfoot bgcolor="#ADFF2F">
+          <tr>
+            <td colspan="2">
+              <center>
+                <button type="submit">Kirim</button> <button>Batal</button>
+              </center>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </form>
+  </body>
+</html>
